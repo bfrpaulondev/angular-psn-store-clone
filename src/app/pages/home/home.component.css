@@ -1,10 +1,18 @@
-.home__container{
+.home__container {
 	width: 90%;
-	margin: auto;
+	max-width: 1200px; /* Limitando a largura máxima para melhor legibilidade em telas maiores */
+	margin: 0 auto; /* Centralizando horizontalmente */
 	padding-top: 50px;
 	display: flex;
-
-	justify-content: space-around;
-	align-items: baseline;
 	flex-wrap: wrap;
+	gap: 20px; /* Espaçamento entre os elementos */
+	justify-content: center; /* Centralizando horizontalmente */
+	align-items: flex-start; /* Alinhando os itens na parte superior */
+}
+
+@media screen and (max-width: 768px) {
+	.home__container {
+			padding-top: 30px; /* Reduzindo o espaçamento superior em telas menores */
+			justify-content: flex-start; /* Alinhando os itens à esquerda em telas menores */
+	}
 }
